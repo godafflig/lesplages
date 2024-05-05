@@ -2,12 +2,10 @@ html,
 body {
     margin: 0;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
-
-
-
-
+html {}
 
 body {
     background-color: #6870FF;
@@ -48,7 +46,20 @@ header {
     width: 210px;
     height: 60px;
     margin: 10px 20px 10px 20px;
+}
 
+.header:hover a {
+    text-decoration: none;
+    color: white;
+}
+.header:hover  {
+    text-decoration: none;
+    background-color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
 }
 
 .titre {
@@ -62,16 +73,16 @@ header {
 
     h5 {
         font-size: 150px;
-        margin: 10px 50px 10px 50px;
+        margin: 20px 50px 60px 50px;
     }
 
     h1 {
         font-size: 293px;
-        margin: 10px 50px 10px 50px;
+        margin: 10px 50px 100px 50px;
     }
-
 }
-.imggallerie{
+
+.imggallerie {
     max-width: 700vw;
 }
 
@@ -91,20 +102,16 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 100px 50px 100px 50px;
-    gap: 100px;
+    gap: 50px;
 }
 
-
 /* -------------------------------------------------------------SCROLL-------------------------------------------------------------------- */
-
 .wrapper {
     margin: 10px 20px 10px 20px;
     max-height: 700px;
-    border: 1px solid #ddd;
     display: flex;
     overflow-x: auto;
     max-width: 100%;
-    /* Utiliser la pleine largeur disponible */
 }
 
 .wrapper::-webkit-scrollbar {
@@ -115,12 +122,10 @@ header {
     flex: 0 0 auto;
     line-height: 0;
     text-align: center;
-    background-color: #ddd;
-    border: #D3FD5B 1px;
+    border: 1px solid #D3FD5B;
 }
 
 .artiste img {
-
     border: #D3FD5B 1px;
 }
 
@@ -130,18 +135,207 @@ header {
 }
 
 .artistename {
+    font-family: "Tourney", sans-serif;
+    font-size: 30px;
+}
 
+.artistedate {
+    font-family: "Tourney", sans-serif;
+    color: aliceblue;
+    font-size: 30px;
 }
 
 /* -------------------------------------------------------------INFO-------------------------------------------------------------------- */
 .info {
-  
     margin: 100px 50px 100px 50px;
-
 }
 
 .titreinfo {
     font-family: "Tourney", sans-serif;
     color: white;
     font-size: 100px;
+}
+
+.adresse {
+    font-family: "Tourney", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.info {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.infopratique {
+    font-size: 30px;
+    font-family: "Tourney", sans-serif;
+    font-weight: 800;
+    color: #FC3DC1;
+    -webkit-text-stroke: #FC3DC1;
+    background-color: white;
+    border: solid 4px #D3FD5B;
+    border-radius: 20px;
+    width: 310px;
+    height: 100px;
+    margin: 10px 20px 10px 1000px;
+}
+
+.billeterie {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .journe {
+        font-size: 100px;
+        color: white;
+        font-family: "Big Shoulders Inline Text", sans-serif;
+        margin: 0px 0px 0px 140px;
+    }
+
+    .date {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin: 0px 0px 10px 0px;
+        align-content: center;
+        color: #D3FD5B;
+    }
+
+    .vendredi,
+    .samedi,
+    .dimanche {
+        border-bottom: #D3FD5B 1px solid;
+        width: 450px;
+        height: 100px;
+    }
+
+    .place {
+        font-size: 30px;
+        font-family: "Tourney", sans-serif;
+        font-weight: 800;
+        color: #FC3DC1;
+        -webkit-text-stroke: #FC3DC1;
+        background-color: white;
+        border: solid 4px #D3FD5B;
+        border-radius: 20px;
+        width: 310px;
+        height: 100px;
+        margin: -50px 20px 10px 70px;
+    }
+
+    .journetype {
+        margin-top: -10px;
+        width: 450px;
+        height: 500px;
+        border: #D3FD5B 1px solid;
+        display: flex;
+        flex-direction: column;
+        font-size: 200px;
+        color: white;
+        font-family: "Big Shoulders Inline Text", sans-serif;
+    }
+}
+
+.cashpackage {
+    margin-top: 60vh;
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    /* width: 100%; */
+    flex-wrap: nowrap;
+}
+
+.choixplace {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+.placepackage {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px black;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 8px 8px 0px 0px black;
+}
+
+.package img {
+    margin: 50px 550px 0px 0px;
+}
+
+.cashless img {
+    margin: 50px 0px 0px 550px;
+}
+
+#cashtext {
+    color: black;
+}
+
+.cashless {
+    font-family: "Tourney", sans-serif;
+    width: 50%;
+    height: 950px;
+    background-color: #FC3DC1;
+    color: black;
+
+    p {
+        color: white;
+    }
+}
+
+.package {
+    font-family: "Tourney", sans-serif;
+    width: 50%;
+    background-color: #D3FD5B;
+    color: black;
+}
+
+.cashless h2 {
+    font-size: 75px;
+    font-family: "Big Shoulders Inline Text", sans-serif;
+    color: white;
+}
+
+.package h2 {
+    font-size: 75px;
+    font-family: "Big Shoulders Inline Text", sans-serif;
+}
+
+.cashless button {
+    margin-top: 100px;
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.package button {
+    margin-top: 100px;
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-family: "Big Shoulders Display", sans-serif;
+    border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
