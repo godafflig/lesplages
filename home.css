@@ -52,7 +52,8 @@ header {
     text-decoration: none;
     color: white;
 }
-.header:hover  {
+
+.header:hover {
     text-decoration: none;
     background-color: black;
 }
@@ -60,6 +61,47 @@ header {
 .header a {
     text-decoration: none;
     color: black;
+}
+
+.asset1 img {
+    position: absolute;
+    top: 3900px;
+    left: 600px;
+    z-index: -1;
+}
+
+.asset2 img {
+    position: absolute;
+    top: 3250px;
+    left: 1600px;
+    width: 500px;
+    height: 300px;
+    z-index: -1;
+}
+
+.asset3 img {
+    position: absolute;
+    top: 3500px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+.asset4 img {
+    position: absolute;
+    top: 4500px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+.asset5 img {
+    position: absolute;
+    top: 4800px;
+    left: 950px;
+    width: 400px;
+    height: 400px;
+    rotate: 40deg;
 }
 
 .titre {
@@ -338,4 +380,8 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+#videoplage {
+    margin-top: 20px;
 }
