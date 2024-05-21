@@ -1,4 +1,4 @@
-# Projet de Design Web
+# UX DESIGN LES PLAGES ELECTRO
 
 Ce projet est un site web simple qui utilise HTML, CSS et JavaScript pour créer une page de design. L'objectif de ce projet est de fournir un exemple de structure de fichiers et de code pour un petit projet web.
 
@@ -14,7 +14,7 @@ Ce projet est un site web simple qui utilise HTML, CSS et JavaScript pour créer
 Clonez ce dépôt sur votre machine locale en utilisant la commande suivante :
 
 ```bash
-git clone https://github.com/votre-utilisateur/projet-design-web.git
+git clone https://github.com/godafflig/lesplages.git
 
 2. Ouvrir le projet dans Visual Studio Code
 
@@ -45,13 +45,13 @@ Structure du projet
 
 arduino
 
-projet-design-web/
+lesplages/
 ├── index.html
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── scripts.js
-└── images/
+└── img/
     └── image-exemple.png
 
     index.html : Le fichier principal HTML.
